@@ -17,5 +17,10 @@ namespace Main
         {
             InitializeComponent();
         }
+
+        private void frmReturnMachine_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
