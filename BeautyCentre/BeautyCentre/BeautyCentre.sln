@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beauty_Centre", "Main\Beauty_Centre.csproj", "{21DCB7B8-20BA-4D3A-B5BC-A524A8C77579}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.DLL", "App.DLL\App.DLL.csproj", "{797263B8-6401-4306-B461-4A7306BEF0E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21DCB7B8-20BA-4D3A-B5BC-A524A8C77579}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21DCB7B8-20BA-4D3A-B5BC-A524A8C77579}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21DCB7B8-20BA-4D3A-B5BC-A524A8C77579}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21DCB7B8-20BA-4D3A-B5BC-A524A8C77579}.Release|Any CPU.Build.0 = Release|Any CPU
+		{797263B8-6401-4306-B461-4A7306BEF0E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{797263B8-6401-4306-B461-4A7306BEF0E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{797263B8-6401-4306-B461-4A7306BEF0E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{797263B8-6401-4306-B461-4A7306BEF0E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

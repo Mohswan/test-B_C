@@ -1,0 +1,10 @@
+D:\MyProgram\ProgramWorked\New folder\BeautyCentre\BeautyCentre\App.DLL\bin\Debug\App.DLL.dll.config
+D:\MyProgram\ProgramWorked\New folder\BeautyCentre\BeautyCentre\App.DLL\bin\Debug\App.DLL.dll
+D:\MyProgram\ProgramWorked\New folder\BeautyCentre\BeautyCentre\App.DLL\bin\Debug\App.DLL.pdb
+D:\MyProgram\ProgramWorked\New folder\BeautyCentre\BeautyCentre\App.DLL\bin\Debug\EntityFramework.dll
+D:\MyProgram\ProgramWorked\New folder\BeautyCentre\BeautyCentre\App.DLL\bin\Debug\EntityFramework.SqlServer.dll
+D:\MyProgram\ProgramWorked\New folder\BeautyCentre\BeautyCentre\App.DLL\bin\Debug\EntityFramework.xml
+D:\MyProgram\ProgramWorked\New folder\BeautyCentre\BeautyCentre\App.DLL\bin\Debug\EntityFramework.SqlServer.xml
+D:\MyProgram\ProgramWorked\New folder\BeautyCentre\BeautyCentre\App.DLL\obj\Debug\App.DLL.csprojResolveAssemblyReference.cache
+D:\MyProgram\ProgramWorked\New folder\BeautyCentre\BeautyCentre\App.DLL\obj\Debug\App.DLL.dll
+D:\MyProgram\ProgramWorked\New folder\BeautyCentre\BeautyCentre\App.DLL\obj\Debug\App.DLL.pdb
