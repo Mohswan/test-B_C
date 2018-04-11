@@ -306,10 +306,11 @@
             // layoutControlItem7
             // 
             this.layoutControlItem7.Control = this.lookUpEdit1;
+            this.layoutControlItem7.CustomizationFormText = "اسم الشركة";
             this.layoutControlItem7.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem7.Name = "layoutControlItem7";
             this.layoutControlItem7.Size = new System.Drawing.Size(331, 28);
-            this.layoutControlItem7.Text = "اسك الشركة";
+            this.layoutControlItem7.Text = "اسم الشركة";
             this.layoutControlItem7.TextSize = new System.Drawing.Size(81, 17);
             // 
             // layoutControlItem4
