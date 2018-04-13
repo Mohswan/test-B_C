@@ -71,10 +71,12 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
     <Reference Include="System.Security" />
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -83,6 +85,10 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="frmCashCompany.cs">
@@ -133,6 +139,12 @@
     <Compile Include="frmCourse.Designer.cs">
       <DependentUpon>frmCourse.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCustMonthSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustMonthSalary.Designer.cs">
+      <DependentUpon>frmCustMonthSalary.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDiagnose.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,11 +163,35 @@
     <Compile Include="frmEmp.Designer.cs">
       <DependentUpon>frmEmp.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEmployeeGzaaa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployeeGzaaa.Designer.cs">
+      <DependentUpon>frmEmployeeGzaaa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmployeeSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployeeSalary.Designer.cs">
+      <DependentUpon>frmEmployeeSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmployeeSol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployeeSol.Designer.cs">
+      <DependentUpon>frmEmployeeSol.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmExport.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmExport.Designer.cs">
       <DependentUpon>frmExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExportOther.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExportOther.Designer.cs">
+      <DependentUpon>frmExportOther.cs</DependentUpon>
     </Compile>
     <Compile Include="frmfrmPurchaseMachine.cs">
       <SubType>Form</SubType>
@@ -175,6 +211,12 @@
     <Compile Include="frmMachine.Designer.cs">
       <DependentUpon>frmMachine.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMonyReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMonyReturn.Designer.cs">
+      <DependentUpon>frmMonyReturn.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPurchaseItems.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +228,12 @@
     </Compile>
     <Compile Include="frmPurchaseToOls.Designer.cs">
       <DependentUpon>frmPurchaseToOls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRepaymentCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRepaymentCompany.Designer.cs">
+      <DependentUpon>frmRepaymentCompany.cs</DependentUpon>
     </Compile>
     <Compile Include="frmRepresentative.cs">
       <SubType>Form</SubType>
@@ -211,6 +259,18 @@
     <Compile Include="frmRequestTools.Designer.cs">
       <DependentUpon>frmRequestTools.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmReservationCust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReservationCust.Designer.cs">
+      <DependentUpon>frmReservationCust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReservationRep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReservationRep.Designer.cs">
+      <DependentUpon>frmReservationRep.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmReturnItems.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -235,6 +295,12 @@
     <Compile Include="frmRoom.Designer.cs">
       <DependentUpon>frmRoom.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRoomMachine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRoomMachine.Designer.cs">
+      <DependentUpon>frmRoomMachine.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSalary.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -252,6 +318,12 @@
     </Compile>
     <Compile Include="frmTool.Designer.cs">
       <DependentUpon>frmTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frnCallDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frnCallDate.Designer.cs">
+      <DependentUpon>frnCallDate.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -285,14 +357,29 @@
     <EmbeddedResource Include="frmCourse.resx">
       <DependentUpon>frmCourse.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCustMonthSalary.resx">
+      <DependentUpon>frmCustMonthSalary.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDiagnose.resx">
       <DependentUpon>frmDiagnose.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEmp.resx">
       <DependentUpon>frmEmp.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployeeGzaaa.resx">
+      <DependentUpon>frmEmployeeGzaaa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployeeSalary.resx">
+      <DependentUpon>frmEmployeeSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployeeSol.resx">
+      <DependentUpon>frmEmployeeSol.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmExport.resx">
       <DependentUpon>frmExport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExportOther.resx">
+      <DependentUpon>frmExportOther.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmfrmPurchaseMachine.resx">
       <DependentUpon>frmfrmPurchaseMachine.cs</DependentUpon>
@@ -303,11 +390,17 @@
     <EmbeddedResource Include="frmMachine.resx">
       <DependentUpon>frmMachine.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMonyReturn.resx">
+      <DependentUpon>frmMonyReturn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPurchaseItems.resx">
       <DependentUpon>frmPurchaseItems.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPurchaseToOls.resx">
       <DependentUpon>frmPurchaseToOls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRepaymentCompany.resx">
+      <DependentUpon>frmRepaymentCompany.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRepresentative.resx">
       <DependentUpon>frmRepresentative.cs</DependentUpon>
@@ -321,6 +414,12 @@
     <EmbeddedResource Include="frmRequestTools.resx">
       <DependentUpon>frmRequestTools.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmReservationCust.resx">
+      <DependentUpon>frmReservationCust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReservationRep.resx">
+      <DependentUpon>frmReservationRep.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmReturnItems.resx">
       <DependentUpon>frmReturnItems.cs</DependentUpon>
     </EmbeddedResource>
@@ -333,6 +432,9 @@
     <EmbeddedResource Include="frmRoom.resx">
       <DependentUpon>frmRoom.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmRoomMachine.resx">
+      <DependentUpon>frmRoomMachine.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmSalary.resx">
       <DependentUpon>frmSalary.cs</DependentUpon>
     </EmbeddedResource>
@@ -341,6 +443,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTool.resx">
       <DependentUpon>frmTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frnCallDate.resx">
+      <DependentUpon>frnCallDate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>

@@ -1,6 +1,6 @@
 ﻿namespace Main
 {
-    partial class frmCashMonthCompany
+    partial class frmMonyReturn
     {
         /// <summary>
         /// Required designer variable.
@@ -29,39 +29,41 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCashMonthCompany));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMonyReturn));
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.lookUpEdit2 = new DevExpress.XtraEditors.LookUpEdit();
+            this.textEdit1 = new DevExpress.XtraEditors.LookUpEdit();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.textEdit11 = new DevExpress.XtraEditors.MemoEdit();
+            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
+            this.lookUpEdit6 = new DevExpress.XtraEditors.LookUpEdit();
+            this.lookUpEdit3 = new DevExpress.XtraEditors.LookUpEdit();
+            this.lookUpEdit5 = new DevExpress.XtraEditors.LookUpEdit();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.layoutControl5 = new DevExpress.XtraLayout.LayoutControl();
             this.lookUpEdit8 = new DevExpress.XtraEditors.TextEdit();
             this.lookUpEdit4 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.lookUpEdit9 = new DevExpress.XtraEditors.DateEdit();
-            this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.textEdit11 = new DevExpress.XtraEditors.MemoEdit();
-            this.lookUpEdit3 = new DevExpress.XtraEditors.LookUpEdit();
-            this.lookUpEdit7 = new DevExpress.XtraEditors.LookUpEdit();
-            this.lookUpEdit6 = new DevExpress.XtraEditors.LookUpEdit();
-            this.lookUpEdit5 = new DevExpress.XtraEditors.LookUpEdit();
-            this.lookUpEdit2 = new DevExpress.XtraEditors.LookUpEdit();
-            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
-            this.textEdit1 = new DevExpress.XtraEditors.LookUpEdit();
-            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem16 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem24 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem30 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lookUpEdit7 = new DevExpress.XtraEditors.TextEdit();
+            this.lookUpEdit10 = new DevExpress.XtraEditors.DateEdit();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.item0 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem16 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem24 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem30 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar1 = new DevExpress.XtraBars.Bar();
             this.btn_Add = new DevExpress.XtraBars.BarButtonItem();
@@ -83,14 +85,17 @@
             this.repositoryItemTokenEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTokenEdit();
             this.barEditItem3 = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemFontEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemFontEdit();
-            this.layoutControl2 = new DevExpress.XtraLayout.LayoutControl();
-            this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControl3 = new DevExpress.XtraLayout.LayoutControl();
-            this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControl4 = new DevExpress.XtraLayout.LayoutControl();
-            this.layoutControlGroup5 = new DevExpress.XtraLayout.LayoutControlGroup();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit6.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl5)).BeginInit();
@@ -99,71 +104,155 @@
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit9.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit9.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit7.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit6.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit7.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit10.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit10.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.item0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTokenEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFontEdit1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControl3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControl4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
             // 
-            this.layoutControl1.Controls.Add(this.groupControl1);
+            this.layoutControl1.Controls.Add(this.lookUpEdit2);
+            this.layoutControl1.Controls.Add(this.textEdit1);
             this.layoutControl1.Controls.Add(this.gridControl1);
             this.layoutControl1.Controls.Add(this.textEdit11);
-            this.layoutControl1.Controls.Add(this.lookUpEdit3);
-            this.layoutControl1.Controls.Add(this.lookUpEdit7);
-            this.layoutControl1.Controls.Add(this.lookUpEdit6);
-            this.layoutControl1.Controls.Add(this.lookUpEdit5);
-            this.layoutControl1.Controls.Add(this.lookUpEdit2);
             this.layoutControl1.Controls.Add(this.lookUpEdit1);
-            this.layoutControl1.Controls.Add(this.textEdit1);
+            this.layoutControl1.Controls.Add(this.lookUpEdit6);
+            this.layoutControl1.Controls.Add(this.lookUpEdit3);
+            this.layoutControl1.Controls.Add(this.lookUpEdit5);
+            this.layoutControl1.Controls.Add(this.groupControl1);
+            this.layoutControl1.Controls.Add(this.lookUpEdit7);
+            this.layoutControl1.Controls.Add(this.lookUpEdit10);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 59);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsView.RightToLeftMirroringApplied = true;
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(675, 590);
+            this.layoutControl1.Size = new System.Drawing.Size(731, 421);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
+            // 
+            // lookUpEdit2
+            // 
+            this.lookUpEdit2.EditValue = "";
+            this.lookUpEdit2.Location = new System.Drawing.Point(29, 29);
+            this.lookUpEdit2.Name = "lookUpEdit2";
+            this.lookUpEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lookUpEdit2.Properties.NullText = "";
+            this.lookUpEdit2.Size = new System.Drawing.Size(602, 22);
+            this.lookUpEdit2.StyleController = this.layoutControl1;
+            this.lookUpEdit2.TabIndex = 5;
+            // 
+            // textEdit1
+            // 
+            this.textEdit1.EditValue = "";
+            this.textEdit1.Location = new System.Drawing.Point(369, 57);
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEdit1.Properties.NullText = "";
+            this.textEdit1.Size = new System.Drawing.Size(262, 22);
+            this.textEdit1.StyleController = this.layoutControl1;
+            this.textEdit1.TabIndex = 5;
+            // 
+            // gridControl1
+            // 
+            this.gridControl1.Location = new System.Drawing.Point(29, 303);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(673, 89);
+            this.gridControl1.TabIndex = 6;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
+            // 
+            // textEdit11
+            // 
+            this.textEdit11.Location = new System.Drawing.Point(29, 234);
+            this.textEdit11.Name = "textEdit11";
+            this.textEdit11.Size = new System.Drawing.Size(602, 63);
+            this.textEdit11.StyleController = this.layoutControl1;
+            this.textEdit11.TabIndex = 5;
+            // 
+            // lookUpEdit1
+            // 
+            this.lookUpEdit1.EditValue = "";
+            this.lookUpEdit1.Location = new System.Drawing.Point(29, 57);
+            this.lookUpEdit1.Name = "lookUpEdit1";
+            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lookUpEdit1.Properties.NullText = "";
+            this.lookUpEdit1.Size = new System.Drawing.Size(263, 22);
+            this.lookUpEdit1.StyleController = this.layoutControl1;
+            this.lookUpEdit1.TabIndex = 5;
+            // 
+            // lookUpEdit6
+            // 
+            this.lookUpEdit6.EditValue = "";
+            this.lookUpEdit6.Location = new System.Drawing.Point(369, 85);
+            this.lookUpEdit6.Name = "lookUpEdit6";
+            this.lookUpEdit6.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lookUpEdit6.Properties.NullText = "";
+            this.lookUpEdit6.Size = new System.Drawing.Size(262, 22);
+            this.lookUpEdit6.StyleController = this.layoutControl1;
+            this.lookUpEdit6.TabIndex = 5;
+            // 
+            // lookUpEdit3
+            // 
+            this.lookUpEdit3.EditValue = "";
+            this.lookUpEdit3.Location = new System.Drawing.Point(29, 85);
+            this.lookUpEdit3.Name = "lookUpEdit3";
+            this.lookUpEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lookUpEdit3.Properties.NullText = "";
+            this.lookUpEdit3.Size = new System.Drawing.Size(263, 22);
+            this.lookUpEdit3.StyleController = this.layoutControl1;
+            this.lookUpEdit3.TabIndex = 5;
+            // 
+            // lookUpEdit5
+            // 
+            this.lookUpEdit5.EditValue = "";
+            this.lookUpEdit5.Location = new System.Drawing.Point(481, 113);
+            this.lookUpEdit5.Name = "lookUpEdit5";
+            this.lookUpEdit5.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lookUpEdit5.Properties.NullText = "";
+            this.lookUpEdit5.Size = new System.Drawing.Size(150, 22);
+            this.lookUpEdit5.StyleController = this.layoutControl1;
+            this.lookUpEdit5.TabIndex = 5;
             // 
             // groupControl1
             // 
             this.groupControl1.Controls.Add(this.layoutControl5);
-            this.groupControl1.Location = new System.Drawing.Point(29, 113);
+            this.groupControl1.Location = new System.Drawing.Point(29, 141);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(617, 87);
+            this.groupControl1.Size = new System.Drawing.Size(673, 87);
             this.groupControl1.TabIndex = 7;
             this.groupControl1.Text = "دفع بشيك";
             // 
@@ -176,30 +265,30 @@
             this.layoutControl5.Location = new System.Drawing.Point(2, 25);
             this.layoutControl5.Name = "layoutControl5";
             this.layoutControl5.OptionsView.RightToLeftMirroringApplied = true;
-            this.layoutControl5.Root = this.layoutControlGroup2;
-            this.layoutControl5.Size = new System.Drawing.Size(613, 60);
+            this.layoutControl5.Root = this.layoutControlGroup3;
+            this.layoutControl5.Size = new System.Drawing.Size(669, 60);
             this.layoutControl5.TabIndex = 0;
             this.layoutControl5.Text = "layoutControl5";
             // 
             // lookUpEdit8
             // 
             this.lookUpEdit8.EditValue = "";
-            this.lookUpEdit8.Location = new System.Drawing.Point(392, 16);
+            this.lookUpEdit8.Location = new System.Drawing.Point(428, 16);
             this.lookUpEdit8.Name = "lookUpEdit8";
-            this.lookUpEdit8.Size = new System.Drawing.Size(106, 22);
+            this.lookUpEdit8.Size = new System.Drawing.Size(126, 22);
             this.lookUpEdit8.StyleController = this.layoutControl5;
             this.lookUpEdit8.TabIndex = 5;
             // 
             // lookUpEdit4
             // 
             this.lookUpEdit4.EditValue = "";
-            this.lookUpEdit4.Location = new System.Drawing.Point(204, 16);
+            this.lookUpEdit4.Location = new System.Drawing.Point(222, 16);
             this.lookUpEdit4.Name = "lookUpEdit4";
             this.lookUpEdit4.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookUpEdit4.Properties.PopupSizeable = true;
             this.lookUpEdit4.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.lookUpEdit4.Size = new System.Drawing.Size(83, 22);
+            this.lookUpEdit4.Size = new System.Drawing.Size(101, 22);
             this.lookUpEdit4.StyleController = this.layoutControl5;
             this.lookUpEdit4.TabIndex = 5;
             // 
@@ -219,208 +308,131 @@
             this.lookUpEdit9.Properties.Mask.EditMask = "";
             this.lookUpEdit9.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
             this.lookUpEdit9.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.lookUpEdit9.Size = new System.Drawing.Size(83, 22);
+            this.lookUpEdit9.Size = new System.Drawing.Size(101, 22);
             this.lookUpEdit9.StyleController = this.layoutControl5;
             this.lookUpEdit9.TabIndex = 5;
             // 
-            // layoutControlGroup2
+            // layoutControlGroup3
             // 
-            this.layoutControlGroup2.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.layoutControlGroup2.GroupBordersVisible = false;
-            this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem4,
-            this.layoutControlItem9,
-            this.layoutControlItem10});
-            this.layoutControlGroup2.Name = "layoutControlGroup2";
-            this.layoutControlGroup2.OptionsItemText.TextToControlDistance = 4;
-            this.layoutControlGroup2.Size = new System.Drawing.Size(613, 60);
-            this.layoutControlGroup2.TextVisible = false;
+            this.layoutControlGroup3.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup3.GroupBordersVisible = false;
+            this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem1,
+            this.layoutControlItem2,
+            this.layoutControlItem3});
+            this.layoutControlGroup3.Name = "layoutControlGroup2";
+            this.layoutControlGroup3.OptionsItemText.TextToControlDistance = 4;
+            this.layoutControlGroup3.Size = new System.Drawing.Size(669, 60);
+            this.layoutControlGroup3.TextVisible = false;
             // 
-            // layoutControlItem4
+            // layoutControlItem1
             // 
-            this.layoutControlItem4.Control = this.lookUpEdit4;
-            this.layoutControlItem4.Location = new System.Drawing.Point(188, 0);
-            this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(188, 34);
-            this.layoutControlItem4.Text = "البنك";
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(95, 17);
+            this.layoutControlItem1.Control = this.lookUpEdit4;
+            this.layoutControlItem1.Location = new System.Drawing.Point(206, 0);
+            this.layoutControlItem1.Name = "layoutControlItem4";
+            this.layoutControlItem1.Size = new System.Drawing.Size(206, 34);
+            this.layoutControlItem1.Text = "البنك";
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(95, 17);
             // 
-            // layoutControlItem9
+            // layoutControlItem2
             // 
-            this.layoutControlItem9.Control = this.lookUpEdit8;
-            this.layoutControlItem9.Location = new System.Drawing.Point(376, 0);
-            this.layoutControlItem9.Name = "layoutControlItem9";
-            this.layoutControlItem9.Size = new System.Drawing.Size(211, 34);
-            this.layoutControlItem9.Text = "رقم الشيك";
-            this.layoutControlItem9.TextSize = new System.Drawing.Size(95, 17);
+            this.layoutControlItem2.Control = this.lookUpEdit8;
+            this.layoutControlItem2.Location = new System.Drawing.Point(412, 0);
+            this.layoutControlItem2.Name = "layoutControlItem9";
+            this.layoutControlItem2.Size = new System.Drawing.Size(231, 34);
+            this.layoutControlItem2.Text = "رقم الشيك";
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(95, 17);
             // 
-            // layoutControlItem10
+            // layoutControlItem3
             // 
-            this.layoutControlItem10.Control = this.lookUpEdit9;
-            this.layoutControlItem10.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem10.Name = "layoutControlItem10";
-            this.layoutControlItem10.Size = new System.Drawing.Size(188, 34);
-            this.layoutControlItem10.Text = "تاريخ الاستحقاق";
-            this.layoutControlItem10.TextSize = new System.Drawing.Size(95, 17);
-            // 
-            // gridControl1
-            // 
-            this.gridControl1.Location = new System.Drawing.Point(29, 275);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(617, 286);
-            this.gridControl1.TabIndex = 6;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            // 
-            // gridView1
-            // 
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
-            // 
-            // textEdit11
-            // 
-            this.textEdit11.Location = new System.Drawing.Point(29, 206);
-            this.textEdit11.Name = "textEdit11";
-            this.textEdit11.Size = new System.Drawing.Size(536, 63);
-            this.textEdit11.StyleController = this.layoutControl1;
-            this.textEdit11.TabIndex = 5;
-            // 
-            // lookUpEdit3
-            // 
-            this.lookUpEdit3.EditValue = "";
-            this.lookUpEdit3.Location = new System.Drawing.Point(29, 57);
-            this.lookUpEdit3.Name = "lookUpEdit3";
-            this.lookUpEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit3.Properties.NullText = "";
-            this.lookUpEdit3.Size = new System.Drawing.Size(225, 22);
-            this.lookUpEdit3.StyleController = this.layoutControl1;
-            this.lookUpEdit3.TabIndex = 5;
+            this.layoutControlItem3.Control = this.lookUpEdit9;
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem3.Name = "layoutControlItem10";
+            this.layoutControlItem3.Size = new System.Drawing.Size(206, 34);
+            this.layoutControlItem3.Text = "تاريخ الاستحقاق";
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(95, 17);
             // 
             // lookUpEdit7
             // 
             this.lookUpEdit7.EditValue = "";
-            this.lookUpEdit7.Location = new System.Drawing.Point(29, 85);
+            this.lookUpEdit7.Location = new System.Drawing.Point(29, 113);
             this.lookUpEdit7.Name = "lookUpEdit7";
-            this.lookUpEdit7.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit7.Properties.NullText = "";
-            this.lookUpEdit7.Size = new System.Drawing.Size(121, 22);
+            this.lookUpEdit7.Size = new System.Drawing.Size(149, 22);
             this.lookUpEdit7.StyleController = this.layoutControl1;
             this.lookUpEdit7.TabIndex = 5;
             // 
-            // lookUpEdit6
+            // lookUpEdit10
             // 
-            this.lookUpEdit6.EditValue = "";
-            this.lookUpEdit6.Location = new System.Drawing.Point(237, 85);
-            this.lookUpEdit6.Name = "lookUpEdit6";
-            this.lookUpEdit6.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.lookUpEdit10.EditValue = "";
+            this.lookUpEdit10.Location = new System.Drawing.Point(255, 113);
+            this.lookUpEdit10.Name = "lookUpEdit10";
+            this.lookUpEdit10.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit6.Properties.NullText = "";
-            this.lookUpEdit6.Size = new System.Drawing.Size(121, 22);
-            this.lookUpEdit6.StyleController = this.layoutControl1;
-            this.lookUpEdit6.TabIndex = 5;
-            // 
-            // lookUpEdit5
-            // 
-            this.lookUpEdit5.EditValue = "";
-            this.lookUpEdit5.Location = new System.Drawing.Point(445, 85);
-            this.lookUpEdit5.Name = "lookUpEdit5";
-            this.lookUpEdit5.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.lookUpEdit10.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit5.Properties.NullText = "";
-            this.lookUpEdit5.Size = new System.Drawing.Size(120, 22);
-            this.lookUpEdit5.StyleController = this.layoutControl1;
-            this.lookUpEdit5.TabIndex = 5;
-            // 
-            // lookUpEdit2
-            // 
-            this.lookUpEdit2.EditValue = "";
-            this.lookUpEdit2.Location = new System.Drawing.Point(341, 57);
-            this.lookUpEdit2.Name = "lookUpEdit2";
-            this.lookUpEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit2.Properties.NullText = "";
-            this.lookUpEdit2.Size = new System.Drawing.Size(224, 22);
-            this.lookUpEdit2.StyleController = this.layoutControl1;
-            this.lookUpEdit2.TabIndex = 5;
-            // 
-            // lookUpEdit1
-            // 
-            this.lookUpEdit1.EditValue = "";
-            this.lookUpEdit1.Location = new System.Drawing.Point(29, 29);
-            this.lookUpEdit1.Name = "lookUpEdit1";
-            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit1.Properties.NullText = "";
-            this.lookUpEdit1.Size = new System.Drawing.Size(225, 22);
-            this.lookUpEdit1.StyleController = this.layoutControl1;
-            this.lookUpEdit1.TabIndex = 5;
-            // 
-            // textEdit1
-            // 
-            this.textEdit1.EditValue = "";
-            this.textEdit1.Location = new System.Drawing.Point(341, 29);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEdit1.Properties.NullText = "";
-            this.textEdit1.Size = new System.Drawing.Size(224, 22);
-            this.textEdit1.StyleController = this.layoutControl1;
-            this.textEdit1.TabIndex = 5;
+            this.lookUpEdit10.Properties.DisplayFormat.FormatString = "";
+            this.lookUpEdit10.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.lookUpEdit10.Properties.EditFormat.FormatString = "";
+            this.lookUpEdit10.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.lookUpEdit10.Properties.Mask.EditMask = "";
+            this.lookUpEdit10.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
+            this.lookUpEdit10.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.lookUpEdit10.Size = new System.Drawing.Size(149, 22);
+            this.lookUpEdit10.StyleController = this.layoutControl1;
+            this.lookUpEdit10.TabIndex = 5;
             // 
             // layoutControlGroup1
             // 
             this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.layoutControlGroup1.GroupBordersVisible = false;
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.Root});
+            this.item0});
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.OptionsItemText.TextToControlDistance = 4;
-            this.layoutControlGroup1.Size = new System.Drawing.Size(675, 590);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(731, 421);
             this.layoutControlGroup1.TextVisible = false;
             // 
-            // Root
+            // item0
             // 
-            this.Root.CustomizationFormText = "Root";
-            this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.Root.GroupBordersVisible = false;
-            this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.item0.CustomizationFormText = "Root";
+            this.item0.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.item0.GroupBordersVisible = false;
+            this.item0.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem16,
             this.layoutControlItem24,
             this.layoutControlItem30,
-            this.layoutControlItem1,
-            this.layoutControlItem2,
-            this.layoutControlItem3,
-            this.layoutControlItem5,
-            this.layoutControlItem7,
+            this.layoutControlItem4,
             this.layoutControlItem6,
-            this.layoutControlItem8});
-            this.Root.Location = new System.Drawing.Point(0, 0);
-            this.Root.Name = "item0";
-            this.Root.OptionsItemText.TextToControlDistance = 4;
-            this.Root.Size = new System.Drawing.Size(649, 564);
-            this.Root.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.Root.TextVisible = false;
+            this.layoutControlItem7,
+            this.layoutControlItem8,
+            this.layoutControlItem10,
+            this.layoutControlItem5,
+            this.layoutControlItem9,
+            this.layoutControlItem11});
+            this.item0.Location = new System.Drawing.Point(0, 0);
+            this.item0.Name = "item0";
+            this.item0.OptionsItemText.TextToControlDistance = 4;
+            this.item0.Size = new System.Drawing.Size(705, 395);
+            this.item0.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
+            this.item0.TextVisible = false;
             // 
             // layoutControlItem16
             // 
             this.layoutControlItem16.Control = this.textEdit1;
             this.layoutControlItem16.CustomizationFormText = "الاسم";
-            this.layoutControlItem16.Location = new System.Drawing.Point(312, 0);
+            this.layoutControlItem16.Location = new System.Drawing.Point(340, 28);
             this.layoutControlItem16.Name = "layoutControlItem16";
-            this.layoutControlItem16.Size = new System.Drawing.Size(311, 28);
-            this.layoutControlItem16.Text = "الاسم";
-            this.layoutControlItem16.TextSize = new System.Drawing.Size(77, 17);
+            this.layoutControlItem16.Size = new System.Drawing.Size(339, 28);
+            this.layoutControlItem16.Text = "الشركة";
+            this.layoutControlItem16.TextSize = new System.Drawing.Size(67, 17);
             // 
             // layoutControlItem24
             // 
             this.layoutControlItem24.Control = this.gridControl1;
             this.layoutControlItem24.CustomizationFormText = "layoutControlItem10";
-            this.layoutControlItem24.Location = new System.Drawing.Point(0, 246);
+            this.layoutControlItem24.Location = new System.Drawing.Point(0, 274);
             this.layoutControlItem24.Name = "layoutControlItem24";
-            this.layoutControlItem24.Size = new System.Drawing.Size(623, 292);
+            this.layoutControlItem24.Size = new System.Drawing.Size(679, 95);
             this.layoutControlItem24.Text = "layoutControlItem10";
             this.layoutControlItem24.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem24.TextVisible = false;
@@ -429,80 +441,95 @@
             // 
             this.layoutControlItem30.Control = this.textEdit11;
             this.layoutControlItem30.CustomizationFormText = "ملاحظات";
-            this.layoutControlItem30.Location = new System.Drawing.Point(0, 177);
+            this.layoutControlItem30.Location = new System.Drawing.Point(0, 205);
             this.layoutControlItem30.MaxSize = new System.Drawing.Size(0, 69);
             this.layoutControlItem30.MinSize = new System.Drawing.Size(135, 69);
             this.layoutControlItem30.Name = "layoutControlItem30";
-            this.layoutControlItem30.Size = new System.Drawing.Size(623, 69);
+            this.layoutControlItem30.Size = new System.Drawing.Size(679, 69);
             this.layoutControlItem30.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem30.Text = "ملاحظات";
-            this.layoutControlItem30.TextSize = new System.Drawing.Size(77, 17);
+            this.layoutControlItem30.TextSize = new System.Drawing.Size(67, 17);
             // 
-            // layoutControlItem1
+            // layoutControlItem4
             // 
-            this.layoutControlItem1.Control = this.lookUpEdit1;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(312, 28);
-            this.layoutControlItem1.Text = "كود الشراء";
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(77, 17);
-            // 
-            // layoutControlItem2
-            // 
-            this.layoutControlItem2.Control = this.lookUpEdit2;
-            this.layoutControlItem2.Location = new System.Drawing.Point(312, 28);
-            this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(311, 28);
-            this.layoutControlItem2.Text = "اسم المندوب";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(77, 17);
-            // 
-            // layoutControlItem3
-            // 
-            this.layoutControlItem3.Control = this.lookUpEdit3;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 28);
-            this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(312, 28);
-            this.layoutControlItem3.Text = "اسم الفرع";
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(77, 17);
-            // 
-            // layoutControlItem5
-            // 
-            this.layoutControlItem5.Control = this.lookUpEdit5;
-            this.layoutControlItem5.Location = new System.Drawing.Point(416, 56);
-            this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(207, 28);
-            this.layoutControlItem5.Text = "نوع الدفع";
-            this.layoutControlItem5.TextSize = new System.Drawing.Size(77, 17);
-            // 
-            // layoutControlItem7
-            // 
-            this.layoutControlItem7.Control = this.lookUpEdit7;
-            this.layoutControlItem7.Location = new System.Drawing.Point(0, 56);
-            this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(208, 28);
-            this.layoutControlItem7.Text = "المبلغ";
-            this.layoutControlItem7.TextSize = new System.Drawing.Size(77, 17);
+            this.layoutControlItem4.Control = this.lookUpEdit1;
+            this.layoutControlItem4.CustomizationFormText = "كود الشراء";
+            this.layoutControlItem4.Location = new System.Drawing.Point(0, 28);
+            this.layoutControlItem4.Name = "layoutControlItem4";
+            this.layoutControlItem4.Size = new System.Drawing.Size(340, 28);
+            this.layoutControlItem4.Text = "كود الارتجاع";
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(67, 17);
             // 
             // layoutControlItem6
             // 
-            this.layoutControlItem6.Control = this.lookUpEdit6;
-            this.layoutControlItem6.Location = new System.Drawing.Point(208, 56);
+            this.layoutControlItem6.Control = this.lookUpEdit3;
+            this.layoutControlItem6.CustomizationFormText = "اسم الفرع";
+            this.layoutControlItem6.Location = new System.Drawing.Point(0, 56);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(208, 28);
-            this.layoutControlItem6.Text = "تاريخ الصرف";
-            this.layoutControlItem6.TextSize = new System.Drawing.Size(77, 17);
+            this.layoutControlItem6.Size = new System.Drawing.Size(340, 28);
+            this.layoutControlItem6.Text = "اسم الفرع";
+            this.layoutControlItem6.TextSize = new System.Drawing.Size(67, 17);
+            // 
+            // layoutControlItem7
+            // 
+            this.layoutControlItem7.Control = this.lookUpEdit5;
+            this.layoutControlItem7.CustomizationFormText = "نوع الدفع";
+            this.layoutControlItem7.Location = new System.Drawing.Point(452, 84);
+            this.layoutControlItem7.Name = "layoutControlItem7";
+            this.layoutControlItem7.Size = new System.Drawing.Size(227, 28);
+            this.layoutControlItem7.Text = "نوع الدفع";
+            this.layoutControlItem7.TextSize = new System.Drawing.Size(67, 17);
             // 
             // layoutControlItem8
             // 
-            this.layoutControlItem8.Control = this.groupControl1;
+            this.layoutControlItem8.Control = this.lookUpEdit7;
+            this.layoutControlItem8.CustomizationFormText = "المبلغ";
             this.layoutControlItem8.Location = new System.Drawing.Point(0, 84);
-            this.layoutControlItem8.MaxSize = new System.Drawing.Size(0, 93);
-            this.layoutControlItem8.MinSize = new System.Drawing.Size(7, 93);
             this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.Size = new System.Drawing.Size(623, 93);
-            this.layoutControlItem8.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem8.TextVisible = false;
+            this.layoutControlItem8.Size = new System.Drawing.Size(226, 28);
+            this.layoutControlItem8.Text = "المبلغ";
+            this.layoutControlItem8.TextSize = new System.Drawing.Size(67, 17);
+            // 
+            // layoutControlItem10
+            // 
+            this.layoutControlItem10.Control = this.groupControl1;
+            this.layoutControlItem10.CustomizationFormText = "layoutControlItem8";
+            this.layoutControlItem10.Location = new System.Drawing.Point(0, 112);
+            this.layoutControlItem10.MaxSize = new System.Drawing.Size(0, 93);
+            this.layoutControlItem10.MinSize = new System.Drawing.Size(7, 93);
+            this.layoutControlItem10.Name = "layoutControlItem10";
+            this.layoutControlItem10.Size = new System.Drawing.Size(679, 93);
+            this.layoutControlItem10.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem10.Text = "layoutControlItem8";
+            this.layoutControlItem10.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem10.TextVisible = false;
+            // 
+            // layoutControlItem5
+            // 
+            this.layoutControlItem5.Control = this.lookUpEdit2;
+            this.layoutControlItem5.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem5.Name = "layoutControlItem5";
+            this.layoutControlItem5.Size = new System.Drawing.Size(679, 28);
+            this.layoutControlItem5.Text = "نوع الارتجاع";
+            this.layoutControlItem5.TextSize = new System.Drawing.Size(67, 17);
+            // 
+            // layoutControlItem9
+            // 
+            this.layoutControlItem9.Control = this.lookUpEdit6;
+            this.layoutControlItem9.Location = new System.Drawing.Point(340, 56);
+            this.layoutControlItem9.Name = "layoutControlItem9";
+            this.layoutControlItem9.Size = new System.Drawing.Size(339, 28);
+            this.layoutControlItem9.Text = "المندوب";
+            this.layoutControlItem9.TextSize = new System.Drawing.Size(67, 17);
+            // 
+            // layoutControlItem11
+            // 
+            this.layoutControlItem11.Control = this.lookUpEdit10;
+            this.layoutControlItem11.Location = new System.Drawing.Point(226, 84);
+            this.layoutControlItem11.Name = "layoutControlItem11";
+            this.layoutControlItem11.Size = new System.Drawing.Size(226, 28);
+            this.layoutControlItem11.Text = "تاريخ ";
+            this.layoutControlItem11.TextSize = new System.Drawing.Size(67, 17);
             // 
             // barManager1
             // 
@@ -620,15 +647,15 @@
             this.barDockControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl1.Location = new System.Drawing.Point(0, 0);
             this.barDockControl1.Manager = this.barManager1;
-            this.barDockControl1.Size = new System.Drawing.Size(675, 59);
+            this.barDockControl1.Size = new System.Drawing.Size(731, 59);
             // 
             // barDockControl2
             // 
             this.barDockControl2.CausesValidation = false;
             this.barDockControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl2.Location = new System.Drawing.Point(0, 649);
+            this.barDockControl2.Location = new System.Drawing.Point(0, 480);
             this.barDockControl2.Manager = this.barManager1;
-            this.barDockControl2.Size = new System.Drawing.Size(675, 0);
+            this.barDockControl2.Size = new System.Drawing.Size(731, 0);
             // 
             // barDockControl3
             // 
@@ -636,15 +663,15 @@
             this.barDockControl3.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControl3.Location = new System.Drawing.Point(0, 59);
             this.barDockControl3.Manager = this.barManager1;
-            this.barDockControl3.Size = new System.Drawing.Size(0, 590);
+            this.barDockControl3.Size = new System.Drawing.Size(0, 421);
             // 
             // barDockControl4
             // 
             this.barDockControl4.CausesValidation = false;
             this.barDockControl4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl4.Location = new System.Drawing.Point(675, 59);
+            this.barDockControl4.Location = new System.Drawing.Point(731, 59);
             this.barDockControl4.Manager = this.barManager1;
-            this.barDockControl4.Size = new System.Drawing.Size(0, 590);
+            this.barDockControl4.Size = new System.Drawing.Size(0, 421);
             // 
             // barMdiChildrenListItem1
             // 
@@ -689,82 +716,32 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemFontEdit1.Name = "repositoryItemFontEdit1";
             // 
-            // layoutControl2
-            // 
-            this.layoutControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutControl2.Location = new System.Drawing.Point(0, 59);
-            this.layoutControl2.Name = "layoutControl2";
-            this.layoutControl2.OptionsView.RightToLeftMirroringApplied = true;
-            this.layoutControl2.Root = this.layoutControlGroup3;
-            this.layoutControl2.Size = new System.Drawing.Size(812, 562);
-            this.layoutControl2.TabIndex = 0;
-            this.layoutControl2.Text = "layoutControl1";
-            // 
-            // layoutControlGroup3
-            // 
-            this.layoutControlGroup3.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.layoutControlGroup3.GroupBordersVisible = false;
-            this.layoutControlGroup3.Name = "Root";
-            this.layoutControlGroup3.OptionsItemText.TextToControlDistance = 4;
-            this.layoutControlGroup3.Size = new System.Drawing.Size(812, 562);
-            this.layoutControlGroup3.TextVisible = false;
-            // 
-            // layoutControl3
-            // 
-            this.layoutControl3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutControl3.Location = new System.Drawing.Point(0, 59);
-            this.layoutControl3.Name = "layoutControl3";
-            this.layoutControl3.OptionsView.RightToLeftMirroringApplied = true;
-            this.layoutControl3.Root = this.layoutControlGroup4;
-            this.layoutControl3.Size = new System.Drawing.Size(812, 562);
-            this.layoutControl3.TabIndex = 0;
-            this.layoutControl3.Text = "layoutControl1";
-            // 
-            // layoutControlGroup4
-            // 
-            this.layoutControlGroup4.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.layoutControlGroup4.GroupBordersVisible = false;
-            this.layoutControlGroup4.Name = "Root";
-            this.layoutControlGroup4.OptionsItemText.TextToControlDistance = 4;
-            this.layoutControlGroup4.Size = new System.Drawing.Size(812, 562);
-            this.layoutControlGroup4.TextVisible = false;
-            // 
-            // layoutControl4
-            // 
-            this.layoutControl4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutControl4.Location = new System.Drawing.Point(0, 59);
-            this.layoutControl4.Name = "layoutControl4";
-            this.layoutControl4.OptionsView.RightToLeftMirroringApplied = true;
-            this.layoutControl4.Root = this.layoutControlGroup5;
-            this.layoutControl4.Size = new System.Drawing.Size(812, 562);
-            this.layoutControl4.TabIndex = 0;
-            this.layoutControl4.Text = "layoutControl1";
-            // 
-            // layoutControlGroup5
-            // 
-            this.layoutControlGroup5.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.layoutControlGroup5.GroupBordersVisible = false;
-            this.layoutControlGroup5.Name = "Root";
-            this.layoutControlGroup5.OptionsItemText.TextToControlDistance = 4;
-            this.layoutControlGroup5.Size = new System.Drawing.Size(812, 562);
-            this.layoutControlGroup5.TextVisible = false;
-            // 
-            // frmCashMonthCompany
+            // frmMonyReturn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(675, 649);
+            this.ClientSize = new System.Drawing.Size(731, 480);
             this.Controls.Add(this.layoutControl1);
             this.Controls.Add(this.barDockControl3);
             this.Controls.Add(this.barDockControl4);
             this.Controls.Add(this.barDockControl2);
             this.Controls.Add(this.barDockControl1);
-            this.Name = "frmCashMonthCompany";
+            this.Name = "frmMonyReturn";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
-            this.Text = "سداد اقساط شهرية لشركات الاجهزة";
+            this.Text = "استرداد نقدية كاش بناءا على المرتجعات";
+            this.Load += new System.EventHandler(this.frmMonyReturn_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit6.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit5.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl5)).EndInit();
@@ -773,42 +750,30 @@
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit9.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit9.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit7.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit6.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit7.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit10.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit10.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.item0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTokenEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFontEdit1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControl3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControl4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -839,41 +804,37 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemTokenEdit repositoryItemTokenEdit1;
         private DevExpress.XtraBars.BarEditItem barEditItem3;
         private DevExpress.XtraEditors.Repository.RepositoryItemFontEdit repositoryItemFontEdit1;
-        private DevExpress.XtraLayout.LayoutControl layoutControl2;
-        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup3;
-        private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraLayout.LayoutControl layoutControl5;
-        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup2;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEdit2;
+        private DevExpress.XtraEditors.LookUpEdit textEdit1;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraEditors.MemoEdit textEdit11;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit3;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit7;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit6;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit5;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit2;
         private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
-        private DevExpress.XtraEditors.LookUpEdit textEdit1;
-        private DevExpress.XtraLayout.LayoutControlGroup Root;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem16;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem24;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem30;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
-        private DevExpress.XtraLayout.LayoutControl layoutControl3;
-        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup4;
-        private DevExpress.XtraLayout.LayoutControl layoutControl4;
-        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup5;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEdit6;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEdit3;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEdit5;
+        private DevExpress.XtraEditors.GroupControl groupControl1;
+        private DevExpress.XtraLayout.LayoutControl layoutControl5;
         private DevExpress.XtraEditors.TextEdit lookUpEdit8;
         private DevExpress.XtraEditors.ComboBoxEdit lookUpEdit4;
         private DevExpress.XtraEditors.DateEdit lookUpEdit9;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup3;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
+        private DevExpress.XtraEditors.TextEdit lookUpEdit7;
+        private DevExpress.XtraEditors.DateEdit lookUpEdit10;
+        private DevExpress.XtraLayout.LayoutControlGroup item0;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem16;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem24;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem30;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem11;
     }
 }
