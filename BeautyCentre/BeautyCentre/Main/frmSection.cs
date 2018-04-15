@@ -8,6 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using App.DLL;
 
 namespace Main
 {
@@ -18,13 +19,11 @@ namespace Main
             InitializeComponent();
         }
 
-        private void textEdit5_EditValueChanged(object sender, EventArgs e)
+        private void btn_Add_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            AppDBContext db = new AppDBContext();
 
-        }
-
-        private void frmSection_Load(object sender, EventArgs e)
-        {
+            Service.Service.fillGrid(db.Sections.ToList(), gridView1, gridControl1);
 
         }
     }

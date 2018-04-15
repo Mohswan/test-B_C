@@ -8,14 +8,7 @@ namespace App.DLL
 
     public partial class Courses
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Courses()
-        {
-            DocCusts = new HashSet<DocCusts>();
-            ItemsCourses = new HashSet<ItemsCourses>();
-            MachinCourses = new HashSet<MachinCourses>();
-        }
-
+        [Key]
         public int Id { get; set; }
 
         public string Name { get; set; }
@@ -42,13 +35,6 @@ namespace App.DLL
 
         public virtual Users Users1 { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DocCusts> DocCusts { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ItemsCourses> ItemsCourses { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<MachinCourses> MachinCourses { get; set; }
+      
     }
 }

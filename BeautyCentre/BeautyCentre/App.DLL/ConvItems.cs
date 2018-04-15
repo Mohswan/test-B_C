@@ -8,12 +8,7 @@ namespace App.DLL
 
     public partial class ConvItems
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public ConvItems()
-        {
-            ItemsConvs = new HashSet<ItemsConvs>();
-        }
-
+        [Key]
         public int Id { get; set; }
 
         public decimal Price { get; set; }
@@ -42,7 +37,5 @@ namespace App.DLL
 
         public virtual Users Users1 { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ItemsConvs> ItemsConvs { get; set; }
     }
 }

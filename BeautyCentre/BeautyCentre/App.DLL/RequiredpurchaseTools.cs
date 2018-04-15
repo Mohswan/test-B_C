@@ -8,13 +8,7 @@ namespace App.DLL
 
     public partial class RequiredpurchaseTools
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public RequiredpurchaseTools()
-        {
-            PurchaseTools = new HashSet<PurchaseTools>();
-            ToolsRequiredpurchases = new HashSet<ToolsRequiredpurchases>();
-        }
-
+        [Key]
         public int Id { get; set; }
 
         public string warranty { get; set; }
@@ -42,10 +36,6 @@ namespace App.DLL
         public int? UserUpdate_Id { get; set; }
 
         public virtual Companies Companies { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PurchaseTools> PurchaseTools { get; set; }
-
         public virtual SalesReps SalesReps { get; set; }
 
         public virtual Sections Sections { get; set; }
@@ -54,7 +44,6 @@ namespace App.DLL
 
         public virtual Users Users1 { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ToolsRequiredpurchases> ToolsRequiredpurchases { get; set; }
+        
     }
 }

@@ -8,6 +8,7 @@ namespace App.DLL
 
     public partial class MachinCourses
     {
+        [Key]
         public int Id { get; set; }
 
         public int? Course_Id { get; set; }

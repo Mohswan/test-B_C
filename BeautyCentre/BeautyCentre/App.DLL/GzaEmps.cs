@@ -8,6 +8,7 @@ namespace App.DLL
 
     public partial class GzaEmps
     {
+        [Key]
         public int Id { get; set; }
 
         public decimal salary { get; set; }

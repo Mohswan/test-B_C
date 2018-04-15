@@ -8,17 +8,11 @@ namespace App.DLL
 
     public partial class JobPermations
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public JobPermations()
-        {
-            Users = new HashSet<Users>();
-        }
-
+        [Key]
         public int Id { get; set; }
 
         public string Name { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Users> Users { get; set; }
+     
     }
 }

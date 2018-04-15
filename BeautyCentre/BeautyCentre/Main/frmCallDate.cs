@@ -11,9 +11,9 @@ using DevExpress.XtraEditors;
 
 namespace Main
 {
-    public partial class frnCallDate : DevExpress.XtraEditors.XtraForm
+    public partial class frmCallDate : DevExpress.XtraEditors.XtraForm
     {
-        public frnCallDate()
+        public frmCallDate()
         {
             InitializeComponent();
         }

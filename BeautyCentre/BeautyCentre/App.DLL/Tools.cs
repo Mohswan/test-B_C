@@ -8,15 +8,7 @@ namespace App.DLL
 
     public partial class Tools
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Tools()
-        {
-            ToolsConvs = new HashSet<ToolsConvs>();
-            ToolsPurchases = new HashSet<ToolsPurchases>();
-            ToolsRequiredpurchases = new HashSet<ToolsRequiredpurchases>();
-            ToolsReturnTools = new HashSet<ToolsReturnTools>();
-        }
-
+        [Key]
         public int Id { get; set; }
 
         public string Name { get; set; }
@@ -53,16 +45,6 @@ namespace App.DLL
 
         public virtual Users Users1 { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ToolsConvs> ToolsConvs { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ToolsPurchases> ToolsPurchases { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ToolsRequiredpurchases> ToolsRequiredpurchases { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ToolsReturnTools> ToolsReturnTools { get; set; }
+   
     }
 }

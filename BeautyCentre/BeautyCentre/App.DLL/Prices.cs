@@ -8,12 +8,8 @@ namespace App.DLL
 
     public partial class Prices
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Prices()
-        {
-            Pations = new HashSet<Pations>();
-        }
 
+        [Key]
         public int Id { get; set; }
 
         public string Name { get; set; }
@@ -33,10 +29,6 @@ namespace App.DLL
         public int? UserAdd_Id { get; set; }
 
         public int? UserUpdate_Id { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Pations> Pations { get; set; }
-
         public virtual Users Users { get; set; }
 
         public virtual Users Users1 { get; set; }

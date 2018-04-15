@@ -11,9 +11,9 @@ using DevExpress.XtraEditors;
 
 namespace Main
 {
-    public partial class frmfrmPurchaseMachine : DevExpress.XtraEditors.XtraForm
+    public partial class frmReservationTool : DevExpress.XtraEditors.XtraForm
     {
-        public frmfrmPurchaseMachine()
+        public frmReservationTool()
         {
             InitializeComponent();
         }

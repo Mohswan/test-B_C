@@ -8,13 +8,7 @@ namespace App.DLL
 
     public partial class Diagnosis
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Diagnosis()
-        {
-            ItemsRequiredpurchases = new HashSet<ItemsRequiredpurchases>();
-            Remedies = new HashSet<Remedies>();
-        }
-
+        [Key]
         public int Id { get; set; }
 
         public string Name { get; set; }
@@ -37,10 +31,5 @@ namespace App.DLL
 
         public virtual Users Users1 { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ItemsRequiredpurchases> ItemsRequiredpurchases { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Remedies> Remedies { get; set; }
     }
 }

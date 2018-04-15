@@ -8,12 +8,8 @@ namespace App.DLL
 
     public partial class CashReturns
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public CashReturns()
-        {
-            ChequeCashReturns = new HashSet<ChequeCashReturns>();
-        }
 
+        [Key]
         public int Id { get; set; }
 
         public int CodeId { get; set; }
@@ -56,7 +52,6 @@ namespace App.DLL
 
         public virtual Users Users1 { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ChequeCashReturns> ChequeCashReturns { get; set; }
+     
     }
 }

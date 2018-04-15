@@ -8,13 +8,7 @@ namespace App.DLL
 
     public partial class ListCusts
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public ListCusts()
-        {
-            ChequeListCusts = new HashSet<ChequeListCusts>();
-            DocCusts = new HashSet<DocCusts>();
-        }
-
+        [Key]
         public int Id { get; set; }
 
         public int Type { get; set; }
@@ -55,10 +49,7 @@ namespace App.DLL
 
         public int? UserUpdate_Id { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ChequeListCusts> ChequeListCusts { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+    
         public virtual ICollection<DocCusts> DocCusts { get; set; }
 
         public virtual Pations Pations { get; set; }

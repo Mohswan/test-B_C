@@ -8,12 +8,7 @@ namespace App.DLL
 
     public partial class Exps
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Exps()
-        {
-            CashOthers = new HashSet<CashOthers>();
-        }
-
+        [Key]
         public int Id { get; set; }
 
         public string Name { get; set; }
@@ -28,9 +23,7 @@ namespace App.DLL
 
         public int? UserUpdate_Id { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CashOthers> CashOthers { get; set; }
-
+    
         public virtual Users Users { get; set; }
 
         public virtual Users Users1 { get; set; }

@@ -8,13 +8,7 @@ namespace App.DLL
 
     public partial class PurchaseMachins
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public PurchaseMachins()
-        {
-            installments = new HashSet<installments>();
-            MonthMachinCoes = new HashSet<MonthMachinCoes>();
-        }
-
+        [Key]
         public int Id { get; set; }
 
         public decimal Cost { get; set; }
@@ -55,13 +49,11 @@ namespace App.DLL
 
         public virtual Companies Companies { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<installments> installments { get; set; }
+   
 
         public virtual Machins Machins { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<MonthMachinCoes> MonthMachinCoes { get; set; }
+   
 
         public virtual PaymentMethods PaymentMethods { get; set; }
 

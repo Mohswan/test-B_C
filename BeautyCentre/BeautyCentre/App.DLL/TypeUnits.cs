@@ -8,21 +8,10 @@ namespace App.DLL
 
     public partial class TypeUnits
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public TypeUnits()
-        {
-            Items = new HashSet<Items>();
-            Tools = new HashSet<Tools>();
-        }
-
+        [Key]
         public int Id { get; set; }
 
         public string Name { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Items> Items { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Tools> Tools { get; set; }
     }
 }

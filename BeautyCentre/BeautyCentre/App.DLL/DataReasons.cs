@@ -8,6 +8,7 @@ namespace App.DLL
 
     public partial class DataReasons
     {
+        [Key]
         public int Id { get; set; }
 
         public string Data { get; set; }

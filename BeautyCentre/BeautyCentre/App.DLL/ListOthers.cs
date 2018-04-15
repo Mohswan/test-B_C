@@ -8,12 +8,7 @@ namespace App.DLL
 
     public partial class ListOthers
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public ListOthers()
-        {
-            DocOthers = new HashSet<DocOthers>();
-        }
-
+        [Key]
         public int Id { get; set; }
 
         public byte Type { get; set; }
@@ -40,8 +35,6 @@ namespace App.DLL
 
         public int? UserUpdate_Id { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DocOthers> DocOthers { get; set; }
 
         public virtual Sections Sections { get; set; }
 

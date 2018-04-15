@@ -8,12 +8,7 @@ namespace App.DLL
 
     public partial class MonthMachinCoes
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public MonthMachinCoes()
-        {
-            ChequeMonthMachinCoes = new HashSet<ChequeMonthMachinCoes>();
-        }
-
+        [Key]
         public int Id { get; set; }
 
         public DateTime Date { get; set; }
@@ -37,11 +32,6 @@ namespace App.DLL
         public int? Section_Id { get; set; }
 
         public int? UserAdd_Id { get; set; }
-
-        public int? UserUpdate_Id { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ChequeMonthMachinCoes> ChequeMonthMachinCoes { get; set; }
 
         public virtual Companies Companies { get; set; }
 

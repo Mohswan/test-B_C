@@ -8,12 +8,8 @@ namespace App.DLL
 
     public partial class ReturnItems
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public ReturnItems()
-        {
-            ItemsReturnItems = new HashSet<ItemsReturnItems>();
-        }
-
+      
+        [Key]
         public int Id { get; set; }
 
         public int PurchaseItems { get; set; }
@@ -45,10 +41,6 @@ namespace App.DLL
         public int? UserUpdate_Id { get; set; }
 
         public virtual Companies Companies { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ItemsReturnItems> ItemsReturnItems { get; set; }
-
         public virtual SalesReps SalesReps { get; set; }
 
         public virtual Sections Sections { get; set; }

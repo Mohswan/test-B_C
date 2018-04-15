@@ -8,12 +8,7 @@ namespace App.DLL
 
     public partial class RequiredpurchaseMachins
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public RequiredpurchaseMachins()
-        {
-            PurchaseMachins = new HashSet<PurchaseMachins>();
-        }
-
+        [Key]
         public int Id { get; set; }
 
         public DateTime Date { get; set; }
@@ -48,8 +43,7 @@ namespace App.DLL
 
         public virtual Machins Machins { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PurchaseMachins> PurchaseMachins { get; set; }
+   
 
         public virtual SalesReps SalesReps { get; set; }
 

@@ -8,6 +8,7 @@ namespace App.DLL
 
     public partial class ItemsCourses
     {
+        [Key]
         public int Id { get; set; }
 
         public double quantity { get; set; }

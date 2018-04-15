@@ -73,7 +73,6 @@
     <Compile Include="ConvMachins.cs" />
     <Compile Include="ConvTools.cs" />
     <Compile Include="Courses.cs" />
-    <Compile Include="C__MigrationHistory.cs" />
     <Compile Include="DataReasons.cs" />
     <Compile Include="DateCalls.cs" />
     <Compile Include="AppDBContext.cs" />
@@ -101,6 +100,11 @@
     <Compile Include="MachinCourses.cs" />
     <Compile Include="MachinDocOthers.cs" />
     <Compile Include="Machins.cs" />
+    <Compile Include="Migrations\201804151202452_initt.cs" />
+    <Compile Include="Migrations\201804151202452_initt.Designer.cs">
+      <DependentUpon>201804151202452_initt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MonthCoes.cs" />
     <Compile Include="MonthCusts.cs" />
     <Compile Include="MonthMachinCoes.cs" />
@@ -140,6 +144,11 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201804151202452_initt.resx">
+      <DependentUpon>201804151202452_initt.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

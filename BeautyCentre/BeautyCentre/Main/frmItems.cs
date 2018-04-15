@@ -22,5 +22,11 @@ namespace Main
         {
 
         }
+
+        private void btn_Add_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Service.Service.ResetBoxes(this);
+            Service.Service.buttonSaveEditDelete(btn_Update, btn_Edit, btn_Delete, true);
+        }
     }
 }

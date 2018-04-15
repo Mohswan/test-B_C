@@ -8,6 +8,7 @@ namespace App.DLL
 
     public partial class DateCalls
     {
+        [Key]
         public int Id { get; set; }
 
         public DateTime DateOld { get; set; }

@@ -8,6 +8,7 @@ namespace App.DLL
 
     public partial class MachinDocOthers
     {
+        [Key]
         public int Id { get; set; }
 
         public int? DocCust_Id { get; set; }

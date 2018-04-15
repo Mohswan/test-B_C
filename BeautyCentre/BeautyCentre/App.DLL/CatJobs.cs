@@ -8,17 +8,11 @@ namespace App.DLL
 
     public partial class CatJobs
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public CatJobs()
-        {
-            Employees = new HashSet<Employees>();
-        }
-
+        [Key]
         public int Id { get; set; }
 
         public string Name { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Employees> Employees { get; set; }
+       
     }
 }

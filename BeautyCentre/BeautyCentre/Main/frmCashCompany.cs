@@ -11,9 +11,9 @@ using DevExpress.XtraEditors;
 
 namespace Main
 {
-    public partial class ر : DevExpress.XtraEditors.XtraForm
+    public partial class frmCashCompany : DevExpress.XtraEditors.XtraForm
     {
-        public ر()
+        public frmCashCompany()
         {
             InitializeComponent();
         }

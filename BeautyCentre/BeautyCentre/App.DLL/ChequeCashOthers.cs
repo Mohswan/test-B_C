@@ -8,6 +8,7 @@ namespace App.DLL
 
     public partial class ChequeCashOthers
     {
+        [Key]
         public int Id { get; set; }
 
         public string Code { get; set; }
