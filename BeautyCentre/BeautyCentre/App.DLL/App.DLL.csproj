@@ -108,6 +108,14 @@
     <Compile Include="Migrations\201804151238192_ChangeUserAllClass.Designer.cs">
       <DependentUpon>201804151238192_ChangeUserAllClass.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804151248446_ChangeUserAllClass1.cs" />
+    <Compile Include="Migrations\201804151248446_ChangeUserAllClass1.Designer.cs">
+      <DependentUpon>201804151248446_ChangeUserAllClass1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804152353006_DeleteAllProperty_Id.cs" />
+    <Compile Include="Migrations\201804152353006_DeleteAllProperty_Id.Designer.cs">
+      <DependentUpon>201804152353006_DeleteAllProperty_Id.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MonthCoes.cs" />
     <Compile Include="MonthCusts.cs" />
@@ -155,6 +163,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804151238192_ChangeUserAllClass.resx">
       <DependentUpon>201804151238192_ChangeUserAllClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804151248446_ChangeUserAllClass1.resx">
+      <DependentUpon>201804151248446_ChangeUserAllClass1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804152353006_DeleteAllProperty_Id.resx">
+      <DependentUpon>201804152353006_DeleteAllProperty_Id.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

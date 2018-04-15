@@ -78,7 +78,7 @@ namespace Main.Service
         /// <param name="btn_Edit"></param>
         /// <param name="btn_Delete"></param>
         /// <param name="EditDeleteEqFalseSaveEqTrue"></param>
-        public static void buttonSaveEditDelete(DevExpress.XtraBars.BarButtonItem btn_Update , DevExpress.XtraBars.BarButtonItem btn_Edit, DevExpress.XtraBars.BarButtonItem btn_Delete, bool EditDeleteEqFalseSaveEqTrue)
+        public static void buttonSaveEditDelete(DevExpress.XtraBars.BarButtonItem btn_Update, DevExpress.XtraBars.BarButtonItem btn_Edit, DevExpress.XtraBars.BarButtonItem btn_Delete, bool EditDeleteEqFalseSaveEqTrue)
         {
             btn_Update.Enabled = EditDeleteEqFalseSaveEqTrue;
             btn_Delete.Enabled = !EditDeleteEqFalseSaveEqTrue;
@@ -94,7 +94,7 @@ namespace Main.Service
         /// <param name="NullText"></param>
         /// <param name="captionCol1"></param>
         /// <param name="captionCol2"></param
-        public static void fillLoK( DevExpress.XtraEditors.LookUpEdit lok, object datasource, string DisplayMember, string ValueMember,  string NullText = null, string captionCol1 = null, string captionCol2 = null)
+        public static void fillLoK(DevExpress.XtraEditors.LookUpEdit lok, object datasource, string DisplayMember, string ValueMember, string NullText = null, string captionCol1 = null, string captionCol2 = null)
         {
             lok.Properties.Columns.Clear();
             lok.Properties.DataSource = datasource;
@@ -104,16 +104,25 @@ namespace Main.Service
             lok.Properties.Columns.Add(new DevExpress.XtraEditors.Controls.LookUpColumnInfo(DisplayMember, captionCol1));
             lok.Properties.Columns.Add(new DevExpress.XtraEditors.Controls.LookUpColumnInfo(ValueMember, captionCol2));
         }
+        public static void fillCombo(DevExpress.XtraEditors.ComboBoxEdit combo, IEnumerable<string >datasource)
+        {
+            combo.Properties.Items.Clear();
+            foreach (var item in datasource)
+            {
+                combo.Properties.Items.Add(item);
+            }
+         
+        }
         /// <summary>
         /// لملئ الجريد بالبيانات
         /// </summary>
         /// <param name="list"></param>
         /// <param name="gridview"></param>
         /// <param name="gridcontrol"></param>
-        public static void fillGrid( object list, DevExpress.XtraGrid.Views.Grid.GridView gridview, DevExpress.XtraGrid.GridControl gridcontrol)
+        public static void fillGrid(object list, DevExpress.XtraGrid.Views.Grid.GridView gridview, DevExpress.XtraGrid.GridControl gridcontrol)
         {
             gridview.Columns.Clear();
-            gridcontrol.DataSource =list;
+            gridcontrol.DataSource = list;
             gridview.BestFitColumns();
 
             gridview.Appearance.Row.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -124,7 +133,7 @@ namespace Main.Service
             gridview.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFullFocus;
             gridview.GridControl = gridcontrol;
             gridview.GroupPanelText = "يمكنك سحب  الحقل ووضعه هنا ";
-           
+
             gridview.OptionsBehavior.Editable = false;
             gridview.OptionsCustomization.AllowRowSizing = true;
             gridview.OptionsFind.AlwaysVisible = true;

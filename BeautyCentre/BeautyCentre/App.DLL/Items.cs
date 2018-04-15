@@ -42,16 +42,6 @@ namespace App.DLL
 
         public string DateUpdate { get; set; }
 
-        public int? CatItem_Id { get; set; }
-
-        public int? Company_MyProperty { get; set; }
-
-        public int? TypeUnit_Id { get; set; }
-
-      
-
-       
-
         public virtual CatItems CatItems { get; set; }
 
         public virtual Companies Companies { get; set; }

@@ -23,9 +23,7 @@ namespace App.DLL
 
         public string DateUpdate { get; set; }
 
-        public int? Employee_Id { get; set; }
-
-        public int? Section_Id { get; set; }
+   
 
       
 

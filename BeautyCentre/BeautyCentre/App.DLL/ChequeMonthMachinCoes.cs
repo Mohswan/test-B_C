@@ -17,9 +17,6 @@ namespace App.DLL
 
         public DateTime Date { get; set; }
 
-        public int? Bank_Id { get; set; }
-
-        public int? MonthMachinCo_Id { get; set; }
 
         public virtual Banks Banks { get; set; }
 

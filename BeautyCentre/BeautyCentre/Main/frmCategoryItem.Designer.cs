@@ -54,12 +54,10 @@
             this.repositoryItemTokenEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTokenEdit();
             this.barEditItem3 = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemFontEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemFontEdit();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit11 = new DevExpress.XtraEditors.MemoEdit();
+            this.txtName = new DevExpress.XtraEditors.TextEdit();
+            this.txtNote = new DevExpress.XtraEditors.MemoEdit();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem16 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem15 = new DevExpress.XtraLayout.LayoutControlItem();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
@@ -95,12 +93,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTokenEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFontEdit1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNote.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -134,9 +130,8 @@
             // layoutControl1
             // 
             this.layoutControl1.Controls.Add(this.gridControl2);
-            this.layoutControl1.Controls.Add(this.textEdit1);
-            this.layoutControl1.Controls.Add(this.textEdit7);
-            this.layoutControl1.Controls.Add(this.textEdit11);
+            this.layoutControl1.Controls.Add(this.txtName);
+            this.layoutControl1.Controls.Add(this.txtNote);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 59);
             this.layoutControl1.Name = "layoutControl1";
@@ -148,11 +143,11 @@
             // 
             // gridControl2
             // 
-            this.gridControl2.Location = new System.Drawing.Point(16, 141);
+            this.gridControl2.Location = new System.Drawing.Point(16, 113);
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.MenuManager = this.barManager1;
             this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(1101, 349);
+            this.gridControl2.Size = new System.Drawing.Size(1101, 377);
             this.gridControl2.TabIndex = 7;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -226,6 +221,7 @@
             this.btn_Update.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btn_Update.ImageOptions.LargeImage")));
             this.btn_Update.Name = "btn_Update";
             this.btn_Update.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btn_Update.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_Update_ItemClick);
             // 
             // btn_Edit
             // 
@@ -347,30 +343,22 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemFontEdit1.Name = "repositoryItemFontEdit1";
             // 
-            // textEdit1
+            // txtName
             // 
-            this.textEdit1.EditValue = "";
-            this.textEdit1.Location = new System.Drawing.Point(16, 16);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(1038, 22);
-            this.textEdit1.StyleController = this.layoutControl1;
-            this.textEdit1.TabIndex = 5;
+            this.txtName.EditValue = "";
+            this.txtName.Location = new System.Drawing.Point(16, 16);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(1004, 22);
+            this.txtName.StyleController = this.layoutControl1;
+            this.txtName.TabIndex = 5;
             // 
-            // textEdit7
+            // txtNote
             // 
-            this.textEdit7.Location = new System.Drawing.Point(16, 44);
-            this.textEdit7.Name = "textEdit7";
-            this.textEdit7.Size = new System.Drawing.Size(1038, 22);
-            this.textEdit7.StyleController = this.layoutControl1;
-            this.textEdit7.TabIndex = 5;
-            // 
-            // textEdit11
-            // 
-            this.textEdit11.Location = new System.Drawing.Point(16, 72);
-            this.textEdit11.Name = "textEdit11";
-            this.textEdit11.Size = new System.Drawing.Size(1038, 63);
-            this.textEdit11.StyleController = this.layoutControl1;
-            this.textEdit11.TabIndex = 5;
+            this.txtNote.Location = new System.Drawing.Point(16, 44);
+            this.txtNote.Name = "txtNote";
+            this.txtNote.Size = new System.Drawing.Size(1004, 63);
+            this.txtNote.StyleController = this.layoutControl1;
+            this.txtNote.TabIndex = 5;
             // 
             // layoutControlGroup1
             // 
@@ -378,7 +366,6 @@
             this.layoutControlGroup1.GroupBordersVisible = false;
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem16,
-            this.layoutControlItem2,
             this.layoutControlItem6,
             this.layoutControlItem15});
             this.layoutControlGroup1.Name = "Root";
@@ -388,43 +375,33 @@
             // 
             // layoutControlItem16
             // 
-            this.layoutControlItem16.Control = this.textEdit1;
+            this.layoutControlItem16.Control = this.txtName;
             this.layoutControlItem16.CustomizationFormText = "الاسم";
             this.layoutControlItem16.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem16.Name = "layoutControlItem16";
             this.layoutControlItem16.Size = new System.Drawing.Size(1107, 28);
             this.layoutControlItem16.Text = "الاسم";
-            this.layoutControlItem16.TextSize = new System.Drawing.Size(59, 17);
-            // 
-            // layoutControlItem2
-            // 
-            this.layoutControlItem2.Control = this.textEdit7;
-            this.layoutControlItem2.CustomizationFormText = "الوظيفة";
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 28);
-            this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(1107, 28);
-            this.layoutControlItem2.Text = "فئة الصنف";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(59, 17);
+            this.layoutControlItem16.TextSize = new System.Drawing.Size(93, 17);
             // 
             // layoutControlItem6
             // 
-            this.layoutControlItem6.Control = this.textEdit11;
+            this.layoutControlItem6.Control = this.txtNote;
             this.layoutControlItem6.CustomizationFormText = "ملاحظات";
-            this.layoutControlItem6.Location = new System.Drawing.Point(0, 56);
+            this.layoutControlItem6.Location = new System.Drawing.Point(0, 28);
             this.layoutControlItem6.MaxSize = new System.Drawing.Size(0, 69);
             this.layoutControlItem6.MinSize = new System.Drawing.Size(135, 69);
             this.layoutControlItem6.Name = "layoutControlItem6";
             this.layoutControlItem6.Size = new System.Drawing.Size(1107, 69);
             this.layoutControlItem6.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem6.Text = "ملاحظات";
-            this.layoutControlItem6.TextSize = new System.Drawing.Size(59, 17);
+            this.layoutControlItem6.Text = "وصف فئة الصنف";
+            this.layoutControlItem6.TextSize = new System.Drawing.Size(93, 17);
             // 
             // layoutControlItem15
             // 
             this.layoutControlItem15.Control = this.gridControl2;
-            this.layoutControlItem15.Location = new System.Drawing.Point(0, 125);
+            this.layoutControlItem15.Location = new System.Drawing.Point(0, 97);
             this.layoutControlItem15.Name = "layoutControlItem15";
-            this.layoutControlItem15.Size = new System.Drawing.Size(1107, 355);
+            this.layoutControlItem15.Size = new System.Drawing.Size(1107, 383);
             this.layoutControlItem15.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem15.TextVisible = false;
             // 
@@ -681,7 +658,7 @@
             this.Name = "frmCategoryItem";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
-            this.Text = "frmCategoryItem";
+            this.Text = "بيانات فئة الصنف";
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
@@ -690,12 +667,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTokenEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFontEdit1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNote.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
@@ -733,11 +708,9 @@
 
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.TextEdit textEdit7;
-        private DevExpress.XtraEditors.MemoEdit textEdit11;
+        private DevExpress.XtraEditors.TextEdit txtName;
+        private DevExpress.XtraEditors.MemoEdit txtNote;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem16;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;

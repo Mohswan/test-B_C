@@ -17,11 +17,7 @@ namespace App.DLL
 
         public decimal amount { get; set; }
 
-        public int? CatQuanItems_Id { get; set; }
-
-        public int? Course_Id { get; set; }
-
-        public int? Items_Id { get; set; }
+    
 
         public virtual CatQuanItems CatQuanItems { get; set; }
 

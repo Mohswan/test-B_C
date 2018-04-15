@@ -17,7 +17,6 @@ namespace App.DLL
 
         public DateTime Date { get; set; }
 
-        public int? PurchaseMachin_Id { get; set; }
 
         public virtual PurchaseMachins PurchaseMachins { get; set; }
     }

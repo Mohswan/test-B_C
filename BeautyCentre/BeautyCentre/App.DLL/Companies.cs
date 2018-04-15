@@ -37,15 +37,15 @@ namespace App.DLL
 
       
 
-        public int? UserUpdate_Id { get; set; }
+       
 
     
 
         public virtual specializations specializations { get; set; }
 
-        public virtual Users Users { get; set; }
+        public virtual Users UsersAdd { get; set; }
 
-        public virtual Users Users1 { get; set; }
+         public virtual Users UserUpdate{ get; set; }
 
       
     }

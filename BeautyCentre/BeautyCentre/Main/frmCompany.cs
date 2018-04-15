@@ -19,11 +19,12 @@ namespace Main
         {
             InitializeComponent();
             Service.Service.buttonSaveEditDelete(btn_Update, btn_Edit, btn_Delete, true);
-
+            Service.Service.fillCombo(txtSpectial,db.specializations.ToList().Select(FUN=>FUN.Name));
         }
 
         private void btn_Add_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+
             Service.Service.ResetBoxes(this);
             Service.Service.buttonSaveEditDelete(btn_Update, btn_Edit, btn_Delete, true);
             Service.Service.fillGrid(db.Companies.ToList(), gridView1, gridControl1);
@@ -31,26 +32,31 @@ namespace Main
 
         private void btn_Update_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            db.Companies.Add(
-                new Companies
+            List<specializations> specializations_ = new List<specializations>();
+            specializations_.Add(db.specializations.Where(fun => fun.Name == txtSpectial.Text).SingleOrDefault());
+            if (specializations_.Count == 0)
+            {
+                specializations_.Add(new specializations { Name = txtSpectial.Text });
+            }
+            db.Companies.Add(new Companies
                 {
                     Address = txtAddress.Text,
                     Name = txtName.Text,
                     taxID = txtId.Text,
                     regID = txtSegel.Text,
                     products = txtProducts.Text,
-                    specializations = new specializations { Name = txtSpectial.Text },
-                    Mob=txtMob.Text,
-                    Tel1=txtTel.Text,
-                    TelWhats=txtWhats.Text,
+                    specializations = specializations_.SingleOrDefault(),
+                    Mob = txtMob.Text,
+                    Tel1 = txtTel.Text,
+                    TelWhats = txtWhats.Text,
 
-                    Users = db.Users.Find(0),
-                    Users1 = db.Users.Find(0),
+                    UsersAdd = db.Users.Find(0),
+                    UserUpdate = db.Users.Find(0),
                     DateAdd = DateTime.Now.ToString(),
-
-                }
-                );
+                });
+                
             db.SaveChanges();
         }
+
     }
 }

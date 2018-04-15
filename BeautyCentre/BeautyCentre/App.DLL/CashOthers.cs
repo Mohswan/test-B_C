@@ -21,13 +21,7 @@ namespace App.DLL
 
         public string DateUpdate { get; set; }
 
-        public int? Exp_Id { get; set; }
-
-        public int? PaymentMethod_Id { get; set; }
-
-        public int? Section_Id { get; set; }
-
-      
+     
 
        
 

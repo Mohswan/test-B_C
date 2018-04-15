@@ -36,8 +36,6 @@ namespace Main.MVVM
 
         public string DateUpdate { get; set; }
 
-        public string UserAdd_Id { get; set; }
-
-        public string UserUpdate_Id { get; set; }
+     
     }
 }

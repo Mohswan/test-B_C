@@ -19,7 +19,6 @@ namespace App.DLL
 
         public string DateUpdate { get; set; }
 
-        public int? ListOther_Id { get; set; }
 
       
 

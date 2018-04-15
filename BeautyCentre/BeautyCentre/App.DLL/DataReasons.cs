@@ -15,7 +15,6 @@ namespace App.DLL
 
         public int IdCode { get; set; }
 
-        public int? Reasons_Id { get; set; }
 
         public virtual Reasons Reasons { get; set; }
     }
