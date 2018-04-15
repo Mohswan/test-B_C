@@ -25,14 +25,14 @@ namespace App.DLL
 
         public int? Company_MyProperty { get; set; }
 
-        public int? UserAdd_Id { get; set; }
+      
 
-        public int? UserUpdate_Id { get; set; }
+       
 
         public virtual Companies Companies { get; set; }
-        public virtual Users Users { get; set; }
+        public virtual Users UserAdd { get; set; }
 
-        public virtual Users Users1 { get; set; }
+        public virtual Users UserUpdate{ get; set; }
 
     }
 }

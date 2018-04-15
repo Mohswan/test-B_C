@@ -35,7 +35,7 @@ namespace App.DLL
 
         public string DateUpdate { get; set; }
 
-        public int? UserAdd_Id { get; set; }
+      
 
         public int? UserUpdate_Id { get; set; }
 

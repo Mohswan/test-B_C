@@ -104,6 +104,10 @@
     <Compile Include="Migrations\201804151202452_initt.Designer.cs">
       <DependentUpon>201804151202452_initt.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804151238192_ChangeUserAllClass.cs" />
+    <Compile Include="Migrations\201804151238192_ChangeUserAllClass.Designer.cs">
+      <DependentUpon>201804151238192_ChangeUserAllClass.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MonthCoes.cs" />
     <Compile Include="MonthCusts.cs" />
@@ -148,6 +152,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201804151202452_initt.resx">
       <DependentUpon>201804151202452_initt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804151238192_ChangeUserAllClass.resx">
+      <DependentUpon>201804151238192_ChangeUserAllClass.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

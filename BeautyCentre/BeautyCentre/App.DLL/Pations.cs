@@ -41,17 +41,17 @@ namespace App.DLL
 
         public int? Price_Id { get; set; }
 
-        public int? UserAdd_Id { get; set; }
+      
 
-        public int? UserUpdate_Id { get; set; }
+       
  public virtual Nations Nations { get; set; }
 
         public virtual Pationjobs Pationjobs { get; set; }
 
         public virtual Prices Prices { get; set; }
 
-        public virtual Users Users { get; set; }
+        public virtual Users UserAdd { get; set; }
 
-        public virtual Users Users1 { get; set; }
+        public virtual Users UserUpdate{ get; set; }
     }
 }

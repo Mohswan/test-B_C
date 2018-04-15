@@ -27,9 +27,9 @@ namespace App.DLL
 
         public int? Section_Id { get; set; }
 
-        public int? UserAdd_Id { get; set; }
+      
 
-        public int? UserUpdate_Id { get; set; }
+       
 
         public virtual Employees Employees { get; set; }
 
@@ -39,8 +39,8 @@ namespace App.DLL
 
         public virtual Sections Sections { get; set; }
 
-        public virtual Users Users { get; set; }
+        public virtual Users UserAdd { get; set; }
 
-        public virtual Users Users1 { get; set; }
+        public virtual Users UserUpdate{ get; set; }
     }
 }

@@ -26,12 +26,31 @@ namespace Main
         {
             Service.Service.ResetBoxes(this);
             Service.Service.buttonSaveEditDelete(btn_Update, btn_Edit, btn_Delete, true);
-            Service.Service.fillGrid(db.Companies.ToList(),gridView1,gridControl1);
+            Service.Service.fillGrid(db.Companies.ToList(), gridView1, gridControl1);
         }
 
         private void btn_Update_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            db.Companies.Add(new Companies { Address = txtAddress.Text, Name = txtName.Text });
+            db.Companies.Add(
+                new Companies
+                {
+                    Address = txtAddress.Text,
+                    Name = txtName.Text,
+                    taxID = txtId.Text,
+                    regID = txtSegel.Text,
+                    products = txtProducts.Text,
+                    specializations = new specializations { Name = txtSpectial.Text },
+                    Mob=txtMob.Text,
+                    Tel1=txtTel.Text,
+                    TelWhats=txtWhats.Text,
+
+                    Users = db.Users.Find(0),
+                    Users1 = db.Users.Find(0),
+                    DateAdd = DateTime.Now.ToString(),
+
+                }
+                );
+            db.SaveChanges();
         }
     }
 }

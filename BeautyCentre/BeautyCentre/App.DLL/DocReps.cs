@@ -21,14 +21,14 @@ namespace App.DLL
 
         public int? ListRep_Id { get; set; }
 
-        public int? UserAdd_Id { get; set; }
+      
 
-        public int? UserUpdate_Id { get; set; }
+       
 
         public virtual ListReps ListReps { get; set; }
 
-        public virtual Users Users { get; set; }
+        public virtual Users UserAdd { get; set; }
 
-        public virtual Users Users1 { get; set; }
+        public virtual Users UserUpdate{ get; set; }
     }
 }

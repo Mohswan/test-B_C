@@ -40,8 +40,6 @@
             this.txtMob = new DevExpress.XtraEditors.TextEdit();
             this.txtId = new DevExpress.XtraEditors.TextEdit();
             this.txtSegel = new DevExpress.XtraEditors.TextEdit();
-            this.txtSpectial = new DevExpress.XtraEditors.TextEdit();
-            this.txtProducts = new DevExpress.XtraEditors.TextEdit();
             this.txtWhats = new DevExpress.XtraEditors.TextEdit();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.item0 = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -77,6 +75,8 @@
             this.repositoryItemTokenEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTokenEdit();
             this.barEditItem3 = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemFontEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemFontEdit();
+            this.txtProducts = new DevExpress.XtraEditors.TextEdit();
+            this.txtSpectial = new DevExpress.XtraEditors.ComboBoxEdit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtAddress.Properties)).BeginInit();
@@ -88,8 +88,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtMob.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSegel.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSpectial.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtProducts.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtWhats.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.item0)).BeginInit();
@@ -108,6 +106,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTokenEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFontEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtProducts.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSpectial.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -120,9 +120,9 @@
             this.layoutControl1.Controls.Add(this.txtMob);
             this.layoutControl1.Controls.Add(this.txtId);
             this.layoutControl1.Controls.Add(this.txtSegel);
-            this.layoutControl1.Controls.Add(this.txtSpectial);
-            this.layoutControl1.Controls.Add(this.txtProducts);
             this.layoutControl1.Controls.Add(this.txtWhats);
+            this.layoutControl1.Controls.Add(this.txtProducts);
+            this.layoutControl1.Controls.Add(this.txtSpectial);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 59);
             this.layoutControl1.Name = "layoutControl1";
@@ -202,22 +202,6 @@
             this.txtSegel.Size = new System.Drawing.Size(97, 22);
             this.txtSegel.StyleController = this.layoutControl1;
             this.txtSegel.TabIndex = 5;
-            // 
-            // txtSpectial
-            // 
-            this.txtSpectial.Location = new System.Drawing.Point(405, 113);
-            this.txtSpectial.Name = "txtSpectial";
-            this.txtSpectial.Size = new System.Drawing.Size(97, 22);
-            this.txtSpectial.StyleController = this.layoutControl1;
-            this.txtSpectial.TabIndex = 5;
-            // 
-            // txtProducts
-            // 
-            this.txtProducts.Location = new System.Drawing.Point(593, 113);
-            this.txtProducts.Name = "txtProducts";
-            this.txtProducts.Size = new System.Drawing.Size(96, 22);
-            this.txtProducts.StyleController = this.layoutControl1;
-            this.txtProducts.TabIndex = 5;
             // 
             // txtWhats
             // 
@@ -558,6 +542,24 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemFontEdit1.Name = "repositoryItemFontEdit1";
             // 
+            // txtProducts
+            // 
+            this.txtProducts.Location = new System.Drawing.Point(593, 113);
+            this.txtProducts.Name = "txtProducts";
+            this.txtProducts.Size = new System.Drawing.Size(96, 22);
+            this.txtProducts.StyleController = this.layoutControl1;
+            this.txtProducts.TabIndex = 5;
+            // 
+            // txtSpectial
+            // 
+            this.txtSpectial.Location = new System.Drawing.Point(405, 113);
+            this.txtSpectial.Name = "txtSpectial";
+            this.txtSpectial.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtSpectial.Size = new System.Drawing.Size(97, 22);
+            this.txtSpectial.StyleController = this.layoutControl1;
+            this.txtSpectial.TabIndex = 5;
+            // 
             // frmCompany
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -583,8 +585,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtMob.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtId.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSegel.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSpectial.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtProducts.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtWhats.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.item0)).EndInit();
@@ -603,6 +603,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTokenEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFontEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtProducts.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSpectial.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -650,12 +652,12 @@
         private DevExpress.XtraEditors.TextEdit txtAddress;
         private DevExpress.XtraEditors.TextEdit txtId;
         private DevExpress.XtraEditors.TextEdit txtSegel;
-        private DevExpress.XtraEditors.TextEdit txtSpectial;
-        private DevExpress.XtraEditors.TextEdit txtProducts;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem12;
+        private DevExpress.XtraEditors.TextEdit txtProducts;
+        private DevExpress.XtraEditors.ComboBoxEdit txtSpectial;
     }
 }
