@@ -19,11 +19,11 @@ namespace App.DLL
 
         public double dose { get; set; }
 
-        ////public int? CatQuanItems_Id { get; set; }
+        //////public int? CatQuanItems_Id { get; set; }
 
-        //public int? DocCust_Id { get; set; }
+        ////public int? DocCust_Id { get; set; }
 
-        //public int? Items_Id { get; set; }
+        ////public int? Items_Id { get; set; }
 
         public virtual CatQuanItems CatQuanItems { get; set; }
 

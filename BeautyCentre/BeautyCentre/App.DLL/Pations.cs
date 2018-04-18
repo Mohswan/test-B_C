@@ -31,15 +31,15 @@ namespace App.DLL
 
         public string DateUpdate { get; set; }
 
-        public int? Gender_Id { get; set; }
+        //public int? Gender_Id { get; set; }
 
-        public int? HowAbout_Id { get; set; }
+        //public int? HowAbout_Id { get; set; }
 
-        public int? Nation_Id { get; set; }
+        //public int? Nation_Id { get; set; }
 
-        public int? Pationjob_Id { get; set; }
+        //public int? Pationjob_Id { get; set; }
 
-        public int? Price_Id { get; set; }
+        //public int? Price_Id { get; set; }
 
       
 

@@ -25,11 +25,11 @@ namespace App.DLL
 
         public string DateUpdate { get; set; }
 
-        public int? Company_MyProperty { get; set; }
+        //public int? Company_MyProperty { get; set; }
 
-        public int? SalesRep_Id { get; set; }
+        //public int? SalesRep_Id { get; set; }
 
-        public int? Section_Id { get; set; }
+        //public int? Section_Id { get; set; }
 
       
 

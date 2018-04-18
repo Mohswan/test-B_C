@@ -116,6 +116,26 @@
     <Compile Include="Migrations\201804152353006_DeleteAllProperty_Id.Designer.cs">
       <DependentUpon>201804152353006_DeleteAllProperty_Id.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804160025158_DeleteAllProperty_Id1.cs" />
+    <Compile Include="Migrations\201804160025158_DeleteAllProperty_Id1.Designer.cs">
+      <DependentUpon>201804160025158_DeleteAllProperty_Id1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804171111446_finishtestaddMasterAndDetails.cs" />
+    <Compile Include="Migrations\201804171111446_finishtestaddMasterAndDetails.Designer.cs">
+      <DependentUpon>201804171111446_finishtestaddMasterAndDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804171124263_finishtestaddMasterAndDetails_.cs" />
+    <Compile Include="Migrations\201804171124263_finishtestaddMasterAndDetails_.Designer.cs">
+      <DependentUpon>201804171124263_finishtestaddMasterAndDetails_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804171134281_finishtestaddMasterAndDetailsMadeha.cs" />
+    <Compile Include="Migrations\201804171134281_finishtestaddMasterAndDetailsMadeha.Designer.cs">
+      <DependentUpon>201804171134281_finishtestaddMasterAndDetailsMadeha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804171738576_deleteDignosinitemsrequeridpurchase.cs" />
+    <Compile Include="Migrations\201804171738576_deleteDignosinitemsrequeridpurchase.Designer.cs">
+      <DependentUpon>201804171738576_deleteDignosinitemsrequeridpurchase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MonthCoes.cs" />
     <Compile Include="MonthCusts.cs" />
@@ -169,6 +189,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804152353006_DeleteAllProperty_Id.resx">
       <DependentUpon>201804152353006_DeleteAllProperty_Id.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804160025158_DeleteAllProperty_Id1.resx">
+      <DependentUpon>201804160025158_DeleteAllProperty_Id1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804171111446_finishtestaddMasterAndDetails.resx">
+      <DependentUpon>201804171111446_finishtestaddMasterAndDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804171124263_finishtestaddMasterAndDetails_.resx">
+      <DependentUpon>201804171124263_finishtestaddMasterAndDetails_.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804171134281_finishtestaddMasterAndDetailsMadeha.resx">
+      <DependentUpon>201804171134281_finishtestaddMasterAndDetailsMadeha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804171738576_deleteDignosinitemsrequeridpurchase.resx">
+      <DependentUpon>201804171738576_deleteDignosinitemsrequeridpurchase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

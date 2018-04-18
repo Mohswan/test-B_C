@@ -13,11 +13,11 @@ namespace App.DLL
 
         public double Quantity { get; set; }
 
-        public int? CatQuanItems_Id { get; set; }
+        //public int? CatQuanItems_Id { get; set; }
 
-        public int? Diagnosis_Id { get; set; }
+        //public int? Diagnosis_Id { get; set; }
 
-        public int? Items_Id { get; set; }
+        //public int? Items_Id { get; set; }
 
         public virtual CatQuanItems CatQuanItems { get; set; }
 

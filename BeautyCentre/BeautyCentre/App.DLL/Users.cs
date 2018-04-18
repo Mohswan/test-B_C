@@ -30,7 +30,7 @@ namespace App.DLL
 
         public string DateUpdate { get; set; }
 
-        public int? JobPermation_Id { get; set; }
+        //public int? JobPermation_Id { get; set; }
 
       
 

@@ -23,7 +23,7 @@ namespace App.DLL
 
         public string DateUpdate { get; set; }
 
-        public int? Company_MyProperty { get; set; }
+        //public int? Company_MyProperty { get; set; }
 
       
 

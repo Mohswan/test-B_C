@@ -6,7 +6,7 @@ namespace App.DLL
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class SalesReps
+    public  class SalesReps
     {
         [Key]
         public int Id { get; set; }
@@ -32,23 +32,6 @@ namespace App.DLL
         public string DateAdd { get; set; }
 
         public string DateUpdate { get; set; }
-
-        public int? Company_MyProperty { get; set; }
-
-        public int? Gender_Id { get; set; }
-
-        public int? HowAbout_Id { get; set; }
-
-        public int? Nation_Id { get; set; }
-
-        public int? Section_Id { get; set; }
-
-      
-
-       
-
-      
-
         public virtual Companies Companies { get; set; }
 
         public virtual Genders Genders { get; set; }

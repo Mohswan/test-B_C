@@ -14,6 +14,8 @@ namespace Main
 {
     public partial class frmSection : DevExpress.XtraEditors.XtraForm
     {
+        AppDBContext db = new AppDBContext();
+
         public frmSection()
         {
             InitializeComponent();
@@ -21,10 +23,22 @@ namespace Main
 
         private void btn_Add_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            AppDBContext db = new AppDBContext();
 
             Service.Service.fillGrid(db.Sections.ToList(), gridView1, gridControl1);
 
+        }
+
+        private void btn_Update_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            db.Sections.Add(new Sections
+            {
+                Name=txtName.Text,
+
+                UserAdd=db.Users.Find(0),
+                UserUpdate=db.Users.Find(0)
+                
+            });
+            db.SaveChanges();
         }
     }
 }

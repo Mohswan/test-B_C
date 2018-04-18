@@ -17,11 +17,11 @@ namespace App.DLL
 
         public decimal amount { get; set; }
 
-        public int? CatQuanTools_Id { get; set; }
+        //public int? CatQuanTools_Id { get; set; }
 
-        public int? PurchaseTools_Id { get; set; }
+        //public int? PurchaseTools_Id { get; set; }
 
-        public int? Tools_Id { get; set; }
+        //public int? Tools_Id { get; set; }
 
         public virtual CatQuanTools CatQuanTools { get; set; }
 

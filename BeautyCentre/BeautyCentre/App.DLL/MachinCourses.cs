@@ -11,9 +11,9 @@ namespace App.DLL
         [Key]
         public int Id { get; set; }
 
-        public int? Course_Id { get; set; }
+        //public int? Course_Id { get; set; }
 
-        public int? Machin_Id { get; set; }
+        //public int? Machin_Id { get; set; }
 
         public virtual Courses Courses { get; set; }
 

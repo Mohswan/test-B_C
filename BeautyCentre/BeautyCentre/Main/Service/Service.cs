@@ -2,11 +2,18 @@
 using DevExpress.XtraEditors;
 using System.Windows.Forms;
 using System.Collections.Generic;
+using DevExpress.XtraEditors.Repository;
+using DevExpress.XtraEditors.Controls;
+using DevExpress.XtraGrid.Columns;
+using System;
+using System.Collections;
+using System.Linq;
 
 namespace Main.Service
 {
 
     public static class Service
+
     {
         /// <summary>
         ///Service.Service.ResetBoxes(this);
@@ -104,14 +111,14 @@ namespace Main.Service
             lok.Properties.Columns.Add(new DevExpress.XtraEditors.Controls.LookUpColumnInfo(DisplayMember, captionCol1));
             lok.Properties.Columns.Add(new DevExpress.XtraEditors.Controls.LookUpColumnInfo(ValueMember, captionCol2));
         }
-        public static void fillCombo(DevExpress.XtraEditors.ComboBoxEdit combo, IEnumerable<string >datasource)
+        public static void fillCombo(DevExpress.XtraEditors.ComboBoxEdit combo, IEnumerable<string> datasource)
         {
             combo.Properties.Items.Clear();
             foreach (var item in datasource)
             {
                 combo.Properties.Items.Add(item);
             }
-         
+
         }
         /// <summary>
         /// لملئ الجريد بالبيانات
@@ -147,6 +154,50 @@ namespace Main.Service
             gridview.OptionsView.ShowHorizontalLines = DevExpress.Utils.DefaultBoolean.True;
             gridview.PaintStyleName = "Skin";
             gridview.VertScrollVisibility = DevExpress.XtraGrid.Views.Base.ScrollVisibility.Always;
+        }
+        public static void GridPrev(object list, DevExpress.XtraGrid.Views.Grid.GridView gridview, DevExpress.XtraGrid.GridControl gridcontrol)
+        {
+            gridview.Columns.Clear();
+            //IList collection = (IList)list;
+
+            //Service.data = list;
+            gridcontrol.DataSource = list;
+
+            gridview.BestFitColumns();
+            gridview.Appearance.Row.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            gridview.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+
+
+            RepositoryItemButtonEdit buttonEdit1 = new RepositoryItemButtonEdit();
+            buttonEdit1.Buttons[0].Kind = ButtonPredefines.Delete;
+            buttonEdit1.TextEditStyle = TextEditStyles.HideTextEditor;
+            buttonEdit1.ButtonClick += new ButtonPressedEventHandler(buttonEdit_ButtonClick2);
+
+            GridColumn unbColumn1 = gridview.Columns.AddField("حذف");
+            unbColumn1.UnboundType = DevExpress.Data.UnboundColumnType.String;
+            unbColumn1.VisibleIndex = gridview.Columns.Count;
+            unbColumn1.ColumnEdit = buttonEdit1;
+
+            gridview.ShowButtonMode = DevExpress.XtraGrid.Views.Base.ShowButtonModeEnum.ShowAlways;
+            Service.gridview = gridview;
+
+        }
+        private static object data;
+        private static object datarow;
+        private static DevExpress.XtraGrid.GridControl gridcontrol;
+        private static DevExpress.XtraGrid.Views.Grid.GridView gridview;
+
+        private static void buttonEdit_ButtonClick2(object sender, ButtonPressedEventArgs e)
+        {
+            IList collection = (IList)Service.data;
+         //   collection.Remove(
+
+            ButtonEdit ed = Service.gridview.ActiveEditor as ButtonEdit;
+            if (ed == null) return;
+            if (e.Button.Kind == DevExpress.XtraEditors.Controls.ButtonPredefines.Delete)
+              Service.gridview.DeleteRow(Service.gridview.FocusedRowHandle);
+
+
         }
 
     }

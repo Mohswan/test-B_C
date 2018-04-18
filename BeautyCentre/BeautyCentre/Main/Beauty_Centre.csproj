@@ -341,6 +341,9 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="MVVM\ItemsRequiredpurchases.cs" />
+    <Compile Include="MVVM\RequiredpurchaseItems.cs" />
+    <Compile Include="MVVM\SalesReps.cs" />
     <Compile Include="MVVM\Section.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
